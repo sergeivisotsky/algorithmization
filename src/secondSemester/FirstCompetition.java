@@ -23,6 +23,7 @@ public class FirstCompetition {
         surnames.add("Aleksejevs");
         surnames.add("Visockis");
         surnames.add("Ārbīdāns");
+
         System.out.println("Unsorted list: ");
         for (String unsortedSurname : surnames) {
             System.out.println(unsortedSurname);
