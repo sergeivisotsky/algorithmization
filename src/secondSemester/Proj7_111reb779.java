@@ -23,8 +23,9 @@ class Student {
         s.marks[2] = a3;
         s.marks[3] = a4;
         s.marks[4] = a5;
-        for (int i = 0; i < s.marks.length - 1; i++)
+        for (int i = 0; i < s.marks.length - 1; i++) {
             avr += s.marks[i];
+        }
         s.marks[5] = avr / (s.marks.length - 1);
 
         return s;
@@ -37,8 +38,9 @@ class Student {
                 "-------", "--------", "------", "------", "------", "------", "------", "---------");
         for (Student aSt : st) {
             System.out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-            for (int j = 0; j < aSt.marks.length - 1; j++)
+            for (int j = 0; j < aSt.marks.length - 1; j++) {
                 System.out.printf("%3.0f\t\t", aSt.marks[j]);
+            }
             System.out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
             System.out.println();
 
@@ -53,8 +55,9 @@ class Student {
         for (Student aSt : st) {
             if (aSt.marks[aSt.marks.length - 1] >= 7) {
                 System.out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-                for (int j = 0; j < aSt.marks.length - 1; j++)
+                for (int j = 0; j < aSt.marks.length - 1; j++) {
                     System.out.printf("%3.0f\t\t", aSt.marks[j]);
+                }
                 System.out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
                 System.out.println();
             }
@@ -74,8 +77,9 @@ class Student {
         for (Student aSt : st) {
             if (aSt.marks[aSt.marks.length - 1] >= 7) {
                 out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-                for (int j = 0; j < aSt.marks.length - 1; j++)
+                for (int j = 0; j < aSt.marks.length - 1; j++) {
                     out.printf("%3.0f\t\t", aSt.marks[j]);
+                }
                 out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
                 out.println();
             }

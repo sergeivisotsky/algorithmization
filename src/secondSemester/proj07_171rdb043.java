@@ -3,7 +3,7 @@ package secondSemester;
 import java.io.*;
 import java.util.ArrayList;
 
-public class proj02_171rdb043 {
+public class proj07_171rdb043 {
     private static BufferedReader reader =
             new BufferedReader(
                     new InputStreamReader(System.in));
