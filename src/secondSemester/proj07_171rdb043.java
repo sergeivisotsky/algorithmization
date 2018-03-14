@@ -3,31 +3,29 @@ package secondSemester;
 import java.io.*;
 import java.util.ArrayList;
 
+class StudentProfile {
+    private String name;
+    private String surname;
+    private ArrayList<Integer> marks;
+}
+
 public class proj07_171rdb043 {
-    private static BufferedReader reader =
-            new BufferedReader(
-                    new InputStreamReader(System.in));
+
     private static void readAndOutputFromFile(String getFileName) throws IOException {
         File file = new File("src\\secondSemester\\");
         final String DIR = file.getAbsolutePath() + "\\" + getFileName;
         BufferedReader readerTwo =
                 new BufferedReader(
                         new FileReader(DIR));
-        ArrayList<String> studentList = new ArrayList<>();
-        String data;
-        while ((data = readerTwo.readLine()) != null) {
-            studentList.add(data);
-        }
-
-        for (String getData : studentList) {
-            
-        }
         /*while ((data = readerTwo.readLine()) != null) {
             System.out.println(data);
         }*/
     }
 
     public static void main(String[] args) {
+        BufferedReader reader =
+                new BufferedReader(
+                        new InputStreamReader(System.in));
         System.out.println("Sergejs Visockis");
         System.out.println("Arturs Kuzmiks");
         System.out.print("Input file name: ");
