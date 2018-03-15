@@ -10,8 +10,9 @@ class Student {
     private String surname;
     private double[] marks;
 
-    public Student createStudent(String surname, String name, int a1,
-                                 int a2, int a3, int a4, int a5) {
+    public Student createStudent(String surname, String name,
+                                 int a1, int a2, int a3,
+                                 int a4, int a5) {
         Student s = new Student();
         s.marks = new double[6];
         double avr = 0;
@@ -23,9 +24,8 @@ class Student {
         s.marks[2] = a3;
         s.marks[3] = a4;
         s.marks[4] = a5;
-        for (int i = 0; i < s.marks.length - 1; i++) {
+        for (int i = 0; i < s.marks.length - 1; i++)
             avr += s.marks[i];
-        }
         s.marks[5] = avr / (s.marks.length - 1);
 
         return s;
@@ -33,15 +33,15 @@ class Student {
 
     public void studPrint(Student[] st) {
         System.out.printf("%-10s\t%-10s\t%s\t%s\t%s\t%s\t%s\t%s\n",
-                "Surname", "Name", "Mark 1", "Mark 2", "Mark3", "Mark 4", "Mark 5", "Avr. Mark");
+                "Surname", "Name", "Mark 1", "Mark 2",
+                "Mark3", "Mark 4", "Mark 5", "Avr. Mark");
         System.out.printf("%-10s\t%-10s\t%s\t%s\t%s\t%s\t%s\t%s\n",
                 "-------", "--------", "------", "------",
                 "------", "------", "------", "---------");
         for (Student aSt : st) {
             System.out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-            for (int j = 0; j < aSt.marks.length - 1; j++) {
+            for (int j = 0; j < aSt.marks.length - 1; j++)
                 System.out.printf("%3.0f\t\t", aSt.marks[j]);
-            }
             System.out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
             System.out.println();
 
@@ -58,9 +58,8 @@ class Student {
         for (Student aSt : st) {
             if (aSt.marks[aSt.marks.length - 1] >= 7) {
                 System.out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-                for (int j = 0; j < aSt.marks.length - 1; j++) {
+                for (int j = 0; j < aSt.marks.length - 1; j++)
                     System.out.printf("%3.0f\t\t", aSt.marks[j]);
-                }
                 System.out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
                 System.out.println();
             }
@@ -80,9 +79,8 @@ class Student {
         for (Student aSt : st) {
             if (aSt.marks[aSt.marks.length - 1] >= 7) {
                 out.printf("%-10s\t%-10s\t", aSt.surname, aSt.name);
-                for (int j = 0; j < aSt.marks.length - 1; j++) {
+                for (int j = 0; j < aSt.marks.length - 1; j++)
                     out.printf("%3.0f\t\t", aSt.marks[j]);
-                }
                 out.printf("%6.2f", aSt.marks[aSt.marks.length - 1]);
                 out.println();
             }
@@ -121,11 +119,9 @@ public class Proj7_111reb779 {
     }
 
     private static Student[] writeStudents(String path) throws IOException {
-        Student[] std =
-                new Student[(int) lineCount(path)];
+        Student[] std = new Student[(int) lineCount(path)];
         FileReader text = new FileReader(path);
-        BufferedReader textread =
-                new BufferedReader(text);
+        BufferedReader textread = new BufferedReader(text);
         int count = 0;
 
         String str;
@@ -138,9 +134,10 @@ public class Proj7_111reb779 {
             int a3 = Integer.parseInt(spt[4]);
             int a4 = Integer.parseInt(spt[5]);
             int a5 = Integer.parseInt(spt[6]);
-            std[count] = new Student()
-                    .createStudent(surname, name,
-                            a1, a2, a3, a4, a5);
+            std[count] =
+                    new Student()
+                            .createStudent(surname, name,
+                                    a1, a2, a3, a4, a5);
             count++;
         }
         textread.close();
