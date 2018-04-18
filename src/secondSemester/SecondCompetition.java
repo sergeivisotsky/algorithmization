@@ -102,7 +102,8 @@ public class SecondCompetition extends JFrame {
         lblYouHave.setText("You have " + counter + " attempts!");
     }
 
-    private int generated = numberGenerator();
+    private Random rd = new Random();
+    private int generated = rd.nextInt(100) + 1;
 
     private void OKbtnActionListener() {
         if (!textField.getText().equals("")) {
@@ -126,10 +127,5 @@ public class SecondCompetition extends JFrame {
         } else {
             JOptionPane.showMessageDialog(contentPane, "Field is empty!");
         }
-    }
-
-    private int numberGenerator() {
-        Random rd = new Random();
-        return rd.nextInt(100) + 1;
     }
 }
