@@ -35,6 +35,7 @@ public class SecondCompetition extends JFrame {
     public SecondCompetition() {
         setTitle("Guess a Number");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
         setBounds(100, 100, 400, 357);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -45,6 +46,7 @@ public class SecondCompetition extends JFrame {
 
         textField = new JTextField();
         textField.setColumns(10);
+        textField.addActionListener(e -> OKbtnActionListener());
 
         lblYouHave = new JLabel("You have 7 attempts to guess a number");
         lblYouHave.setFont(new Font("Tahoma", Font.PLAIN, 16));
