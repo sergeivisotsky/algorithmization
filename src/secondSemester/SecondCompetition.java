@@ -114,13 +114,13 @@ public class SecondCompetition extends JFrame {
                     lblYouHave.setText("Number not found! You have " +
                             counter + " attempts!");
                     if (Integer.parseInt(textField.getText()) > generated) {
-                        JOptionPane.showMessageDialog(contentPane, "Number is greater than intented number!");
+                        JOptionPane.showMessageDialog(contentPane, "Number is greater than intended number!");
                     } else {
-                        JOptionPane.showMessageDialog(contentPane, "Number is smaller than intented number!");
+                        JOptionPane.showMessageDialog(contentPane, "Number is smaller than intended number!");
                     }
                 }
             } else {
-                lblYouHave.setText("No more attempt are allowed!");
+                lblYouHave.setText("No more attempts are allowed!");
             }
         } else {
             JOptionPane.showMessageDialog(contentPane, "Field is empty!");
