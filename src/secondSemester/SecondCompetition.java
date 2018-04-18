@@ -103,19 +103,19 @@ public class SecondCompetition extends JFrame {
     }
 
     private Random rd = new Random();
-    private int generated = rd.nextInt(100) + 1;
+    private int generatedNumber = rd.nextInt(100) + 1;
 
     private void OKbtnActionListener() {
         if (!textField.getText().equals("")) {
             String getFieldText = textField.getText();
             if (counter > 0) {
-                if (Integer.parseInt(getFieldText) == generated) {
+                if (Integer.parseInt(getFieldText) == generatedNumber) {
                     lblYouHave.setText("Number is guessed!");
                 } else {
                     counter--;
                     lblYouHave.setText("Number not found! You have " +
                             counter + " attempts!");
-                    if (Integer.parseInt(textField.getText()) > generated) {
+                    if (Integer.parseInt(textField.getText()) > generatedNumber) {
                         JOptionPane.showMessageDialog(contentPane, "Number is greater than intended number!");
                     } else {
                         JOptionPane.showMessageDialog(contentPane, "Number is smaller than intended number!");
