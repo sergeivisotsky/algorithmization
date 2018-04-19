@@ -23,7 +23,10 @@ public class Ld2171rdb043 {
         sc.close();
         System.out.println("t  \t  x \t  y");
         t = 0.05;
-        while ((x<12 && y>=0)||(x>=12 && x<14 && y>=8)||(x>=14 && x<=17 && y>=10)||(x>17 && y>=8)) {
+        while ((x < 12 && y >= 0) ||
+                (x >= 12 && x < 14 && y >= 8) ||
+                (x >= 14 && x <= 17 && y >= 10) ||
+                (x > 17 && y >= 8)) {
             t += 0.05;
             x = v0 * t * Math.cos(Math.toRadians(a));
             y = v0 * t * Math.sin(Math.toRadians(a)) - g * t * t / 2;

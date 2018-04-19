@@ -36,7 +36,7 @@ public class Ld4171rdb043 {
             for (i = 0; i < 8; i++) {
 
                 for (j = 0; j < 5; j++) {
-                    A[i][j] = rnd.nextInt(40-18)-1;
+                    A[i][j] = rnd.nextInt(40 - 18) - 1;
                 }
 
             }

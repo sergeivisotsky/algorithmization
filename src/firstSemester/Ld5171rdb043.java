@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ld5171rdb043 {
 
     public static void main(String[] args) {
-        int A[][] = new int [10][10];
+        int A[][] = new int[10][10];
         int i, j, k, C;
 
         System.out.println("Sergejs Visockis IRDBD12 171RDB043");

@@ -22,24 +22,24 @@ public class Ld3171rdb043 {
             return;
         }
         sc.close();
-        if (K==0) {
+        if (K == 0) {
             Random r = new Random();
-            for(i=0; i<20; i++) {
-                A[i] = r.nextInt(50+1+50)-50;
+            for (i = 0; i < 20; i++) {
+                A[i] = r.nextInt(50 + 1 + 50) - 50;
             }
         } else {
             A[0] = 1;
-            for (i=1; i<20; i++) {
+            for (i = 1; i < 20; i++) {
                 A[i] = A[i - 1] + K;
             }
         }
 
         System.out.println("\nA:");
 
-        i=0;
-        while (i<20) {
+        i = 0;
+        while (i < 20) {
             System.out.print(A[i] + "\t");
-            if (i==9) {
+            if (i == 9) {
                 System.out.println();
             }
             i++;
@@ -50,14 +50,14 @@ public class Ld3171rdb043 {
         do {
             A[i] = A[i + 1];
             i++;
-        } while (i<19);
+        } while (i < 19);
         A[i] = C;
 
         System.out.println("\nA:");
 
-        for (i=0; i<20; i++) {
+        for (i = 0; i < 20; i++) {
             System.out.print(A[i] + "\t");
-            if (i==9) {
+            if (i == 9) {
                 System.out.println();
             }
         }
