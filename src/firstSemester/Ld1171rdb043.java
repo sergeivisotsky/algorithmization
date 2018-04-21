@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ld1171rdb043 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        float x = 0, y = 0;
+        float x, y;
 
         System.out.println("Sergejs Visockis IRDBD012 171RDB043");
 
