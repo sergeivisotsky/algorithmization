@@ -4,12 +4,14 @@
 *.project
 
 DoublyLinkedList_example.java
+Md3_alg.java
 
 # Package Files #
 *.jar
 *.war
 *.ear
 *.iml
+
 
 # idea project files
 .idea/*

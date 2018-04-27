@@ -1,3 +1,8 @@
+/*
+* @Author - Artur Kuzmik
+*
+* */
+
 package secondSemester;
 
 import java.io.*;
