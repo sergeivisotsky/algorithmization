@@ -1,7 +1,8 @@
-/*
-* @Author - Artur Kuzmik
-*
-* */
+/**
+ *
+ * @Author - Artur Kuzmik
+ *
+ * */
 
 package secondSemester;
 
