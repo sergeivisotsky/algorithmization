@@ -88,7 +88,7 @@ public class ThirdCompetition {
             }
 
         } catch (IllegalArgumentException e) {
-            System.out.println("Inpu-output error!");
+            System.out.println("Input-output error!");
 
         }
     }
