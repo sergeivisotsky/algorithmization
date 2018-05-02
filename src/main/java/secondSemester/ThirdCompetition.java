@@ -14,52 +14,62 @@ import java.util.TreeMap;
 public class ThirdCompetition {
     private static BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
+    private static void pushQuantityChecker() {
 
-    private static void initializeElements() {
-        Multimap<Integer, String> symbols = ArrayListMultimap.create();
-        symbols.put(2, "a");
-        symbols.put(2, "b");
-        symbols.put(2, "c");
-        symbols.put(3, "");
-        symbols.put(3, "D");
-        symbols.put(3, "e");
-        symbols.put(3, "f");
-        symbols.put(4, "g");
-        symbols.put(4, "h");
-        symbols.put(4, "i");
-        symbols.put(5, "j");
-        symbols.put(5, "k");
-        symbols.put(5, "l");
-        symbols.put(6, "M");
-        symbols.put(6, "n");
-        symbols.put(6, "o");
-        symbols.put(7, "p");
-        symbols.put(7, "q");
-        symbols.put(7, "r");
-        symbols.put(7, "s");
-        symbols.put(8, "t");
-        symbols.put(8, "u");
-        symbols.put(8, "v");
-        symbols.put(9, "w");
-        symbols.put(9, "x");
-        symbols.put(9, "y");
-        symbols.put(9, "z");
-        symbols.put(0, " ");
     }
 
     public static void main(String[] args) {
         try {
-            initializeElements();
-            String yesNoAnswer;
-            String[] result;
-            do {
-                System.out.print("Input number: ");
-                int numbers = Integer.parseInt(reader.readLine());
+            int answer;
+            char[] one;
+            char[] two = {'a', 'b', 'c'};
+            char[] three = {'D', 'e', 'f'};
+            char[] four = {'g', 'h', 'i'};
+            char[] five = {'j', 'k', 'l'};
+            char[] six = {'M', 'n', 'o'};
+            char[] seven = {'p', 'q', 'r', 's'};
+            char[] eight = {'t', 'u', 'v'};
+            char[] nine = {'w', 'x', 'y', 'z'};
+            char[] zero = {' '};
 
-                System.out.println("Continue? (y/n)");
-                System.out.print("Answer: ");
-                yesNoAnswer = reader.readLine();
-            } while (yesNoAnswer.equals("y") || yesNoAnswer.equals("Y"));
+            System.out.println("1: ");
+            System.out.println("2: abc");
+            System.out.println("3: Def");
+            System.out.println("4 ghi:");
+            System.out.println("5: jkl");
+            System.out.println("6: Mno");
+            System.out.println("7: pqrs");
+            System.out.println("8: tuv");
+            System.out.println("9: wxyz");
+            System.out.println("0: space");
+            System.out.print("Answer: ");
+            answer = Integer.parseInt(reader.readLine());
+            switch (answer) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 0:
+                    break;
+                    default:
+                        System.out.println("Restricted option!");
+                        break;
+            }
+
             System.out.print("Result: ");
         } catch (IOException e) {
             System.out.println("Not a number!");
