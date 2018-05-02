@@ -50,8 +50,17 @@ public class ThirdCompetition {
     public static void main(String[] args) {
         try {
             initializeElements();
-            System.out.print("Input numbers: ");
-            int numbers = Integer.parseInt(reader.readLine());
+            String yesNoAnswer;
+            String[] result;
+            do {
+                System.out.print("Input number: ");
+                int numbers = Integer.parseInt(reader.readLine());
+
+                System.out.println("Continue? (y/n)");
+                System.out.print("Answer: ");
+                yesNoAnswer = reader.readLine();
+            } while (yesNoAnswer.equals("y") || yesNoAnswer.equals("Y"));
+            System.out.print("Result: ");
         } catch (IOException e) {
             System.out.println("Not a number!");
         }
