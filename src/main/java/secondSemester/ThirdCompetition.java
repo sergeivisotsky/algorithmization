@@ -3,7 +3,6 @@ package secondSemester;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class ThirdCompetition {
     private final char[] two = {'a', 'b', 'c'};

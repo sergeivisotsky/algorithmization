@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class ThirdCompetition_backup {
     private static void symbol(String num, int count) {
-        if (numberChecker(num)) {
+        if (toTheNumber(num)) {
             switch (Integer.parseInt(num)) {
                 case 2:
                     String str2 = "abc";
@@ -54,12 +54,12 @@ public class ThirdCompetition_backup {
 
     private static void display(int count, String str) {
         while (count > str.length()) {
-            count -= str.length();
+            count -= str.length(); //????????????????????
         }
         System.out.print(str.charAt(count - 1));
     }
 
-    private static boolean numberChecker(String str) {
+    private static boolean toTheNumber(String str) {
         try {
             Integer.parseInt(str);
             return true;
