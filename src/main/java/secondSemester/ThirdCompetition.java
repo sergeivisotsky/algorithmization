@@ -41,10 +41,11 @@ public class ThirdCompetition {
                     display(count, str9);
                     break;
                 case 0:
-                    if (count % 2 == 0)
+                    if (count % 2 == 0) {
                         System.out.print(".");
-                    else
+                    } else {
                         System.out.print(" ");
+                    }
                     break;
                 default:
             }
