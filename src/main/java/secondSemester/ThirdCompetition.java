@@ -52,7 +52,7 @@ public class ThirdCompetition {
         }
     }
 
-    static boolean parseAsTheNumber(String number) {
+    private static boolean parseAsTheNumber(String number) {
         try {
             Integer.parseInt(number);
             return true;
