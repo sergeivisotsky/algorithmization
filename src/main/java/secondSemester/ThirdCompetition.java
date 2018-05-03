@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class ThirdCompetition {
 
-    public static void character(String number, int counter) {
+    private static void character(String number, int counter) {
         if (parseAsTheNumber(number)) {
             switch (Integer.parseInt(number)) {
                 case 2:
@@ -61,7 +61,7 @@ public class ThirdCompetition {
         }
     }
 
-    public static void display(int counter, String lineOfNumbers) {
+    private static void display(int counter, String lineOfNumbers) {
         while (counter > lineOfNumbers.length()) {
             counter -= lineOfNumbers.length();
         }
