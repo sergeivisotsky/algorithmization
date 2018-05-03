@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class ThirdCompetition {
 
-    private static void character(String number, int counter) {
+    static void character(String number, int counter) {
         if (parseAsTheNumber(number)) {
             switch (Integer.parseInt(number)) {
                 case 2:
