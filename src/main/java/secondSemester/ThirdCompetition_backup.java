@@ -79,7 +79,7 @@ public class ThirdCompetition_backup {
                 if (line.charAt(i) == line.charAt(i - 1)) {
                     numCount++;
                 } else {
-                    symbol(String.valueOf(line.charAt(i - 1)), ++numCount);
+                    symbol(String.valueOf(line.charAt(i - 1)), ++numCount /*????????????????*/);
                     numCount = 0;
                 }
                 if (i == line.length() - 1) {
