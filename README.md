@@ -1,4 +1,4 @@
 # algorithmization
 University subject materials.
-Subject - Algorithmization and programming of solutions
+Subject - Algorithmization and Programming of Solutions
 Asoc. Prof. Marina Uhanova
