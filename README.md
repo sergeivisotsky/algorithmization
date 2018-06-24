@@ -1,2 +1,4 @@
-# res-alg-progr
-University subject materials
+# algorithmization
+University subject materials.
+Subject - Algorithmization and programming of solutions
+Asoc. Prof. Marina Uhanova
